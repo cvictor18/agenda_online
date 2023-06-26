@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./agenda.png" alt="Emoji Calendário"><h1>Agenda de Contatos</h1>
+    </header>
+    <section>
+        <form onsubmit="cadastrar(event)">
+            <label for="iptnome">Nome: </label>
+            <input type="text" name="iptnome" id="iptnome" required>
+            <label for="ipttel">Telefone: </label>
+            <input type="tel" id="ipttel" name="ipttel" 
+            pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" 
+            placeholder=" xx xxxxx-xxxx" 
+            required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="5">
+            <thead>
+                <th>Nome</th><th>Telefone</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>---</td><td>---</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        &copy; Copyright
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
